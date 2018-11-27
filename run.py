@@ -268,7 +268,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
 
         msg.addButton(ok, QtWidgets.QMessageBox.ActionRole)
         msg.addButton(cancel, QtWidgets.QMessageBox.RejectRole)
-        ok.setText(u'DETERMINE')
+        ok.setText(u'CLOSE')
         cancel.setText(u'CANCEL')
         if msg.exec_() == QtWidgets.QMessageBox.RejectRole:
             event.ignore()
