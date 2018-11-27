@@ -192,7 +192,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
                 self.infoBox.setText(u'CURRENTLY TRACKING HUMAN BEHAVIOUR')
                 humans = poseEstimator.inference(show)
                 ori = np.copy(show)
-                show, joints, bboxes, xcenter, sk= TfPoseEstimator.get_skeleton(show, humans, imgcopy=False)
+                show, joints, bboxes, xcenter, sk = TfPoseEstimator.get_skeleton(show, humans, imgcopy=False)
                 height = show.shape[0]
                 width = show.shape[1]
                 if bboxes:
